@@ -96,7 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
+ /* overlay the photoshop comp to quickly check for layout */  
    .overlay {
    		position: absolute; 
    		display: block;
@@ -148,7 +148,16 @@ body {
      -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   		  box-sizing: border-box; 
-}     
+}  
+.two-col {
+  -webkit-column-count: 2;
+  -webkit-column-gap:   40px;  
+  -moz-column-count:    2;
+  -moz-column-gap:      40px;
+  column-count:         2;
+  column-gap:           40px;
+  text-align: justify;
+}  
 h2 {
 	font: normal 20px/27px "Chunk Five", Georgia;
 	color: $red;
@@ -295,11 +304,41 @@ h2 {
 	
 }
 
+/* styles for the google form */
 
+.form-intro {
+	color: #fff;
+}
+.ss-q-title {
 
-
-
-
+	font: normal bolder 13px/42px "Junction", "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+.review-form {
+	
+	input {
+		color: #222;
+		height: 42px;
+		border-radius: 3px;
+		border: none;
+	}
+	
+	.ss-form-question {
+		width: 340px;
+		float: left;
+		
+		&:nth-child(odd){
+			margin-right: 40px;
+		}
+				
+		&:last-child:after {
+			clear: left;
+			content: "";
+			display: table;
+		}
+	}
+}
 
 
 
