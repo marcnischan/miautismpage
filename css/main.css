@@ -241,7 +241,7 @@ h2 {
 .main-footer-area {
   background-color: #3a3e3b; }
 
-/* styles for the google form */
+/* ================ styles for the google form =============================== */
 .required-message, .error-message {
   color: #c43b1d;
   display: none;
@@ -262,15 +262,39 @@ h2 {
   border: none; }
   .review-form input[class="ss-q-short"] {
     width: 100%; }
-.review-form ol .ss-form-question {
+.review-form .ss-choices {
+  margin: 0;
+  padding: 0; }
+  .review-form .ss-choices:after {
+    content: "i";
+    font: italic bold 12px/16px Georgia, serif;
+    background-color: #fff;
+    color: #666;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    text-align: center; }
+.review-form .ss-choice-item {
+  list-style-type: none;
+  padding: 0; }
+
+.main-form-part-one .ss-form-question {
   width: 340px;
   float: left; }
-  .review-form ol .ss-form-question:nth-child(odd) {
+  .main-form-part-one .ss-form-question:nth-child(odd) {
     margin-right: 40px; }
-  .review-form ol .ss-form-question:last-child {
+  .main-form-part-one .ss-form-question:last-child:after {
     content: "";
+    display: table;
     clear: both;
     border: solid 1px blue; }
+
+.ss-q-help {
+  display: none;
+  position: relative; }
 
 /* ==========================================================================
    Helper classes
