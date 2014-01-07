@@ -1,0 +1,33 @@
+/* -- styles from the tutorial at http://www.onextrapixel.com/2012/10/26/custom-style-all-your-form-elements-with-pure-css-and-no-javascript/ */
+
+.ss-form-question {
+	input[type="radio"], input[type="checkbox"] { 
+    	position: absolute; left: -999em; 
+	}
+	input[type="radio"] + label:before, input[type="checkbox"] + label:before { 
+	    content:''; /* this is generated content*/ 
+	    display: inline-block; /* make this fake elements inline block */
+	    position:relative; /* we need to move the element without effecting the doc flow */
+	    top:0.25em;  /* we're moving it slightly down for alignment purposes */
+	    left:-2px; /* we're moving it slightly to the left */
+	    width:25px; 
+	    height:25px; /* the width and height of the fake elements */
+	    background-image:url(../img/sprite-radio.png); /* the background image sprite */
+    }
+    
+    input[type="checkbox"] + label:before { background-position: 0 -25px;} 
+    input[type="checkbox"]:checked + label:before {background-position: 0 0 ; }
+	input[type="radio"] + label:before { background-position: -25px -25px;} 
+	input[type="radio"]:checked + label:before { background-position: -25px 0;}
+}
+.ie8 label:before { display:none; content:none; /*this removes the fake content*/ }
+.ie8 input[type="checkbox"], 
+.ie8 input[type="radio"], 
+.ie7 input[type="checkbox"], 
+.ie7 input[type="radio"]{ position: static; left:0; /* this puts the inputs back in their place */
+}
+
+
+
+
+	

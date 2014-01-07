@@ -140,81 +140,86 @@
 										</div>
 									</div>
 								</div>
-								<div class="ss-form-question errorbox-good">
-									<div dir="ltr" class="ss-item ss-item-required ss-select">
-										<div class="ss-form-entry">
-											<label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1573943434">
-												<div class="ss-q-title">County
-													<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-													<span class="ss-required-asterisk">*</span>
+									
+										<div class="ss-form-question errorbox-good county-dropdown">
+											<div dir="ltr" class="ss-item ss-item-required ss-select">
+												<div class="ss-form-entry">
+													<label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1573943434">
+														<div class="ss-q-title">County
+															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+															<span class="ss-required-asterisk">*</span>
+														</div>
+														<div class="ss-q-help ss-secondary-text" dir="ltr">What county is the business in?</div>
+													</label>
+													<select name="entry.1573943434" id="entry_1573943434" aria-label="County What county is the business in? " aria-required="true" required="">
+														<option value=""></option>
+														<option value="Genesee">Genesee</option>
+														<option value="Lapeer">Lapeer</option>
+														<option value="Lenawee">Lenawee</option>
+														<option value="Livingston">Livingston</option>
+														<option value="Macomb">Macomb</option>
+														<option value="Monroe">Monroe</option>
+														<option value="Oakland">Oakland</option>
+														<option value="Saint Clair">Saint Clair</option>
+														<option value="Washtenaw">Washtenaw</option>
+														<option value="Wayne">Wayne</option>
+													</select>
+													<div class="required-message">This is a required question</div>
 												</div>
-												<div class="ss-q-help ss-secondary-text" dir="ltr">What county is the business in?</div>
-											</label>
-											<select name="entry.1573943434" id="entry_1573943434" aria-label="County What county is the business in? " aria-required="true" required="">
-												<option value=""></option>
-												<option value="Genesee">Genesee</option>
-												<option value="Lapeer">Lapeer</option>
-												<option value="Lenawee">Lenawee</option>
-												<option value="Livingston">Livingston</option>
-												<option value="Macomb">Macomb</option>
-												<option value="Monroe">Monroe</option>
-												<option value="Oakland">Oakland</option>
-												<option value="Saint Clair">Saint Clair</option>
-												<option value="Washtenaw">Washtenaw</option>
-												<option value="Wayne">Wayne</option>
-											</select>
-											<div class="required-message">This is a required question</div>
-										</div>
-									</div>
-								</div>
+											</div>
+										</div>	
+										<div style="clear: both;"></div>									
 							</li>
 							
-							<li class="main-form-part-two">
-							
-							<div class="ss-form-question errorbox-good">
-									<div dir="ltr" class="ss-item ss-item-required ss-radio">
-										<div class="ss-form-entry">
-											<label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_393304779">
-												<div class="ss-q-title">Business category
-													<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-													<span class="ss-required-asterisk">*</span>
-												</div>
-												<div class="ss-q-help ss-secondary-text" dir="ltr">The business you choose to rate and review should fall into one of these 3 categories.
-												</div>
-											</label>
+							<li class="main-form-part-two">							
 								
-											<ul class="ss-choices" role="radiogroup" aria-label="Business category The business you choose to rate and review should fall into one of these 3 categories. ">
-												<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Restaurant" id="group_1189975768_1" role="radio" class="ss-q-radio" aria-label="Restaurant" required=""></span>
-												<span class="ss-choice-label">Restaurant</span>
-												</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Barbershop/hair salon" id="group_1189975768_2" role="radio" class="ss-q-radio" aria-label="Barbershop/hair salon" required=""></span>
-												<span class="ss-choice-label">Barbershop/hair salon</span>
-												</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Place of recreation" id="group_1189975768_3" role="radio" class="ss-q-radio" aria-label="Place of recreation" required=""></span>
-												<span class="ss-choice-label">Place of recreation</span>
-												</label></li>
-											</ul>
-											<div class="error-message"></div>
-											<div class="required-message">This is a required question</div>
-										</div>
+							
+							 <div class="ss-form-question errorbox-good business-category">
+								<div dir="ltr" class="ss-item ss-item-required ss-radio">
+									<div class="ss-form-entry">
+										<label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_393304779">
+											<div class="ss-q-title">Business category
+												<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+											<div class="ss-q-help ss-secondary-text" dir="ltr">The business you choose to rate and review should fall into one of these 3 categories.
+											</div>
+										</label>
+							
+										<ul class="ss-choices" role="radiogroup" aria-label="Business category The business you choose to rate and review should fall into one of these 3 categories. ">
+											<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Restaurant" id="group_1189975768_1" role="radio" class="ss-q-radio" aria-label="Restaurant" required=""></span>
+											<span class="ss-choice-label">Restaurant</span>
+											</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Barbershop/hair salon" id="group_1189975768_2" role="radio" class="ss-q-radio" aria-label="Barbershop/hair salon" required=""></span>
+											<span class="ss-choice-label">Barbershop/hair salon</span>
+											</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1189975768" value="Place of recreation" id="group_1189975768_3" role="radio" class="ss-q-radio" aria-label="Place of recreation" required=""></span>
+											<span class="ss-choice-label">Place of recreation</span>
+											</label></li>
+										</ul>
+										<div class="error-message"></div>
+										<div class="required-message">This is a required question</div>
 									</div>
 								</div>
-							
-							 
+							</div>
 							
 							<div class="ss-form-question errorbox-good">
-							<div dir="ltr" class="ss-item ss-item-required ss-scale"><div class="ss-form-entry"><label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1503280821"><div class="ss-q-title">Overall rating
-							<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-							<span class="ss-required-asterisk">*</span></div>
-							<div class="ss-q-help ss-secondary-text" dir="ltr">Rate your overall opinion of the place.</div></label>
+								<div dir="ltr" class="ss-item ss-item-required ss-scale"><div class="ss-form-entry"><label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1503280821"><div class="ss-q-title">Overall rating
+								<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+								<span class="ss-required-asterisk">*</span></div>
+								<div class="ss-q-help ss-secondary-text" dir="ltr">Rate your overall opinion of the place.</div></label>
+								
+								<table border="0" cellpadding="5" cellspacing="0" id="entry_590674708"><tr aria-hidden="true" class="aria-todo"><td class="ss-scalenumbers"></td>
+								<td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_1">1</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_2">2</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_3">3</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_4">4</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_5">5</label></td>
+								<td class="ss-scalenumbers"></td></tr>
+								<tr role="radiogroup" aria-label="Overall rating Rate your overall opinion of the place. Select a value from a range of 1,Highly unsatisfactory, to 5,Fantastic,."><td class="ss-scalerow ss-leftlabel"><div aria-hidden="true" class="aria-todo">Highly unsatisfactory</div>
+								<div class="aria-only-help">Select a value from a range of 1,Highly unsatisfactory, to 5,Fantastic,.</div></td>
+								<td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="1" id="group_590674708_1" role="radio" class="ss-q-radio" aria-label="1" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="2" id="group_590674708_2" role="radio" class="ss-q-radio" aria-label="2" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="3" id="group_590674708_3" role="radio" class="ss-q-radio" aria-label="3" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="4" id="group_590674708_4" role="radio" class="ss-q-radio" aria-label="4" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="5" id="group_590674708_5" role="radio" class="ss-q-radio" aria-label="5" required=""></div></td>
+								<td class="ss-scalerow ss-rightlabel aria-todo" aria-hidden="true">Fantastic</td></tr></table>
+								<div class="required-message">This is a required question</div>
+								</div>
+								</div>
+							</div> 
 							
-							<table border="0" cellpadding="5" cellspacing="0" id="entry_590674708"><tr aria-hidden="true" class="aria-todo"><td class="ss-scalenumbers"></td>
-							<td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_1">1</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_2">2</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_3">3</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_4">4</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_590674708_5">5</label></td>
-							<td class="ss-scalenumbers"></td></tr>
-							<tr role="radiogroup" aria-label="Overall rating Rate your overall opinion of the place. Select a value from a range of 1,Highly unsatisfactory, to 5,Fantastic,."><td class="ss-scalerow ss-leftlabel"><div aria-hidden="true" class="aria-todo">Highly unsatisfactory</div>
-							<div class="aria-only-help">Select a value from a range of 1,Highly unsatisfactory, to 5,Fantastic,.</div></td>
-							<td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="1" id="group_590674708_1" role="radio" class="ss-q-radio" aria-label="1" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="2" id="group_590674708_2" role="radio" class="ss-q-radio" aria-label="2" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="3" id="group_590674708_3" role="radio" class="ss-q-radio" aria-label="3" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="4" id="group_590674708_4" role="radio" class="ss-q-radio" aria-label="4" required=""></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.590674708" value="5" id="group_590674708_5" role="radio" class="ss-q-radio" aria-label="5" required=""></div></td>
-							<td class="ss-scalerow ss-rightlabel aria-todo" aria-hidden="true">Fantastic</td></tr></table>
-							<div class="required-message">This is a required question</div>
-							</div></div></div> <div class="ss-form-question errorbox-good">
+							<div class="ss-form-question errorbox-good">
 							<div dir="ltr" class="ss-item ss-item-required ss-scale"><div class="ss-form-entry"><label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1842542740"><div class="ss-q-title">Sights
 							<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
 							<span class="ss-required-asterisk">*</span></div>
@@ -255,7 +260,9 @@
 							<td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.728893794" value="1" id="group_728893794_1" role="radio" class="ss-q-radio" aria-label="1"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.728893794" value="2" id="group_728893794_2" role="radio" class="ss-q-radio" aria-label="2"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.728893794" value="3" id="group_728893794_3" role="radio" class="ss-q-radio" aria-label="3"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.728893794" value="4" id="group_728893794_4" role="radio" class="ss-q-radio" aria-label="4"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.728893794" value="5" id="group_728893794_5" role="radio" class="ss-q-radio" aria-label="5"></div></td>
 							<td class="ss-scalerow ss-rightlabel aria-todo" aria-hidden="true">Extremely accommodating </td></tr></table>
 							<div class="required-message">This is a required question</div>
-							</div></div></div> <div class="ss-form-question errorbox-good">
+							</div></div></div> 
+							
+							<div class="ss-form-question errorbox-good comments">
 							<div dir="ltr" class="ss-item  ss-paragraph-text"><div class="ss-form-entry"><label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1883954135"><div class="ss-q-title">Comments
 							</div>
 							<div class="ss-q-help ss-secondary-text" dir="ltr">Tell us a little more about your experience. What was and wasn&#39;t good about the place of business? How were the crowds, wait time, general environment, location? [Limited to 500 characters]</div></label>

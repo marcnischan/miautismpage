@@ -143,12 +143,20 @@ body {
 	font-family: "Junction", "Helvetica Neue", Helvetica, Arial;
 	-webkit-font-smoothing: antialiased;
 }
-	
+/* --------- force a better box model ----------- */ 	
 *, *:before, *:after {
      -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   		  box-sizing: border-box; 
 }  
+/* ------ reset form elements --------- */
+input, select, textarea { 
+    margin:0; 
+    padding:0; 
+    outline:none; 
+    font-family:inherit; 
+}
+
 .two-col {
   -webkit-column-count: 2;
   -webkit-column-gap:   40px;  
@@ -174,7 +182,7 @@ h2 {
 	overflow: auto;
 }
 
-/* landing page styles */
+/* ======================================== landing page styles ========== */
   
 .header-area { 
 	background-color: #2b2e2c;
@@ -308,20 +316,163 @@ h2 {
 
 /* ================ styles for the google form =============================== */
 
+.form-intro {
+	color: #fff;
+}
 .required-message, .error-message {
 	color: #c43b1d;
 	display: none;
 	font-size: 13px;
 }
-.form-intro {
-	color: #fff;
-}
 .ss-q-title {
-
 	font: normal bolder 13px/42px "Junction", "Helvetica Neue", Helvetica, sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 }
+.main-form-part-one  {
+	margin-bottom: 60px;
+	
+	.ss-form-question{
+		width: 340px;
+		float: left;
+		margin-bottom: 10px;
+		
+		&:nth-child(odd){
+			margin-right: 40px;
+		}
+				
+		&:last-child:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+		
+	input {
+		color: #222;
+		height: 42px;
+		border-radius: 3px;
+		border: none;
+		
+		&[class="ss-q-short"] {
+			width: 100%;
+		}
+	}
+	
+	.ss-choices {
+		margin: 0;
+		padding: 0;
+		
+		&:after {
+			content: "i";
+			font: italic bold 12px/16px Georgia, serif;
+			background-color: #fff;
+			color: #666;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			-webkit-border-radius: 8px; 
+	        border-radius: 8px; 
+			background-clip: padding-box;
+			text-align: center;
+		}
+	}
+	.ss-choice-item {
+		list-style-type: none;
+		padding: 0;
+		display: inline-block;
+	}
+	select {
+		width: 340px;
+	}
+}
+
+.main-form-part-two {
+	.ss-form-question {
+		margin-bottom: 20px;
+	}
+	.business-category {
+		input[type="radio"] {
+			margin: 0 5px 20px 0;
+		}
+		.ss-choices {
+			margin: 0;
+			padding: 0;
+			
+			&:after {
+				content: "i";
+				font: italic bold 12px/16px Georgia, serif;
+				background-color: #fff;
+				color: #666;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				-webkit-border-radius: 8px; 
+		        border-radius: 8px; 
+				background-clip: padding-box;
+				text-align: center;
+			}
+		}
+		.ss-choice-item {
+			list-style-type: none;
+			padding: 0;
+			display: inline-block;
+		}
+		.ss-choice-label {
+			margin-right: 20px;
+		}
+		.ss-q-title {
+			position: static;
+			top: 0;
+		}
+	}
+	.ss-q-title {
+		position: absolute;
+		top: -3px;
+	}
+	input {
+		color: #222;
+	
+		&[class="ss-q-short"] {
+			width: 100%;
+		}
+	}
+	textarea {
+		width: 100%;
+		-webkit-border-radius: 3px; 
+		        border-radius: 3px;
+		border: none;
+	}
+	.ss-leftlabel {
+		padding-left: 0;
+		width: 360px;
+		text-align: right;
+		padding-right: 16px;
+	}
+	.ss-leftlabel, .ss-rightlabel {
+		font-size: 14px;
+	}
+	.aria-only-help {
+		display: none;
+	}
+	.comments .ss-q-title {
+		position: static;
+	}
+}
+.ss-form-entry {
+	position: relative;
+}
+.ss-select{
+	width: 100%;
+	line-height: 42px;
+	border: none;
+	height: 42px;
+}
+.ss-q-help {
+	display: none;
+	position: relative;
+}
+/*
 .review-form {
 	
 	input {
@@ -356,34 +507,10 @@ h2 {
 	.ss-choice-item {
 		list-style-type: none;
 		padding: 0;
+		display: inline-block;
 	}
 }
-
-.main-form-part-one, .main-form-part-two {
-	
-}
-.main-form-part-one .ss-form-question {
-	width: 340px;
-	float: left;
-	
-	&:nth-child(odd){
-		margin-right: 40px;
-	}
-			
-	&:last-child:after {
-		content: "";
-		display: table;
-		clear: both;
-		border: solid 1px blue;
-	}
-}
-
-
-.ss-q-help {
-	display: none;
-	position: relative;
-}
-
+*/
 
 /* ==========================================================================
    Helper classes

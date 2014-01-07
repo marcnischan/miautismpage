@@ -5,8 +5,10 @@
 #MiAutism files to ignore in git
 
 /admin
-
-
+/PSD
+js/vendor/html5shiv-printshiv.js
+js/vendor/html5shiv.js
+js/vendorjquery.uniform.min.js
 
 
 #GENERIC GITIGNORE
