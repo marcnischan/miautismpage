@@ -197,6 +197,8 @@ h2 {
 
 .logo-main {
 	color: #bec0b8;
+	width: 600px;
+	float: left;
 	
 	.logo{
 		color: $red;
@@ -209,6 +211,8 @@ h2 {
 
 .nav-main {
 	float: right;
+	margin-top: 55px;
+	display: none;
 	
 	ul {
 		margin: 0; 
@@ -216,6 +220,11 @@ h2 {
 	}
 	li {
 		display: inline-block;
+		
+	}
+	a {
+		color: #7a817d;
+		text-decoration: none;
 	}
 }		
 
@@ -388,6 +397,9 @@ h2 {
 }
 
 .main-form-part-two {
+	
+	margin-bottom: 100px;
+	
 	.ss-form-question {
 		margin-bottom: 20px;
 	}
@@ -411,6 +423,7 @@ h2 {
 		        border-radius: 8px; 
 				background-clip: padding-box;
 				text-align: center;
+				display: none;
 			}
 		}
 		.ss-choice-item {
@@ -420,6 +433,7 @@ h2 {
 		}
 		.ss-choice-label {
 			margin-right: 20px;
+			font-size: 14px;
 		}
 		.ss-q-title {
 			position: static;
@@ -437,11 +451,24 @@ h2 {
 			width: 100%;
 		}
 	}
+	#ss-submit {
+		padding: 10px 18px 5px;
+		font-size: 14px;
+		line-height: 24px;
+		border: none;
+		background-color: #444;
+		color: #ffdd22;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;	
+	}
 	textarea {
 		width: 100%;
-		-webkit-border-radius: 3px; 
-		        border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
 		border: none;
+		padding: 24px 24px;
+		font: normal 14px/21px "Junction" sans-serif;
 	}
 	.ss-leftlabel {
 		padding-left: 0;
@@ -455,10 +482,24 @@ h2 {
 	.aria-only-help {
 		display: none;
 	}
-	.comments .ss-q-title {
-		position: static;
+	.comments {
+		p {
+			font-size: 14px;
+		}
+		.ss-q-title {
+			position: static;
+		}
 	}
 }
+
+.ss-navigate {
+	.ss-secondary-text {
+		display: none;
+	}
+	table {
+		float: right;
+	}
+} 
 .ss-form-entry {
 	position: relative;
 }
@@ -472,45 +513,30 @@ h2 {
 	display: none;
 	position: relative;
 }
-/*
-.review-form {
+
+/* ===================== styling for the infomation section =========== */
+
+.blurb {
+	padding: 100px 0 60px;
 	
-	input {
-		color: #222;
-		height: 42px;
-		border-radius: 3px;
-		border: none;
-		
-		&[class="ss-q-short"] {
-			width: 100%;
-		}
+	h3 {
+		font-size: 34px;
+		line-height: 42px;
+		color: #f16a4d;
+		margin-top: 0;
+		letter-spacing: -0.065em;
 	}
-	
-	.ss-choices {
-		margin: 0;
-		padding: 0;
-		
-		&:after {
-			content: "i";
-			font: italic bold 12px/16px Georgia, serif;
-			background-color: #fff;
-			color: #666;
-			position: absolute;
-			width: 16px;
-			height: 16px;
-			-webkit-border-radius: 8px; 
-	        border-radius: 8px; 
-			background-clip: padding-box;
-			text-align: center;
-		}
-	}
-	.ss-choice-item {
-		list-style-type: none;
-		padding: 0;
-		display: inline-block;
+	p {
+		font: lighter 14px/21px "Junction" sans-serif;
 	}
 }
-*/
+.phone-img {
+	display: block;
+	float: left;
+	margin-right: 40px;
+}
+
+
 
 /* ==========================================================================
    Helper classes
