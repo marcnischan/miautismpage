@@ -227,6 +227,8 @@ h2 {
 .main-intro {
 	color: #fff;
 	padding-top: 25px;
+	position: relative;
+	overflow: visible;
 	
 	h1 {
 		font: normal 42px/48px "Junction";
@@ -254,7 +256,7 @@ h2 {
 }
 .call-to-action {
 	position: absolute;
-	top: -136px;
+	bottom: -219px;
 	z-index: 2;
 	background: #fff;
 	width: 720px;
@@ -283,7 +285,7 @@ h2 {
 }
 .review-form {
 	position: relative;
-	overflow: visible;
+	overflow: auto;
 	padding-top: 100px;
 	
 	h3 {
@@ -306,6 +308,11 @@ h2 {
 
 /* styles for the google form */
 
+.required-message, .error-message {
+	color: #c43b1d;
+	display: none;
+	font-size: 13px;
+}
 .form-intro {
 	color: #fff;
 }
@@ -322,9 +329,13 @@ h2 {
 		height: 42px;
 		border-radius: 3px;
 		border: none;
+		
+		&[class="ss-q-short"] {
+			width: 100%;
+		}
 	}
 	
-	.ss-form-question {
+	ol .ss-form-question {
 		width: 340px;
 		float: left;
 		
@@ -332,10 +343,11 @@ h2 {
 			margin-right: 40px;
 		}
 				
-		&:last-child:after {
-			clear: left;
+		&:last-child {
 			content: "";
-			display: table;
+			
+			clear: both;
+			border: solid 1px blue;
 		}
 	}
 }

@@ -178,7 +178,9 @@ h2 {
 
 .main-intro {
   color: #fff;
-  padding-top: 25px; }
+  padding-top: 25px;
+  position: relative;
+  overflow: visible; }
   .main-intro h1 {
     font: normal 42px/48px "Junction";
     letter-spacing: -0.065em;
@@ -198,7 +200,7 @@ h2 {
 
 .call-to-action {
   position: absolute;
-  top: -136px;
+  bottom: -219px;
   z-index: 2;
   background: #fff;
   width: 720px;
@@ -226,7 +228,7 @@ h2 {
 
 .review-form {
   position: relative;
-  overflow: visible;
+  overflow: auto;
   padding-top: 100px; }
   .review-form h3 {
     font-size: 32px;
@@ -240,6 +242,11 @@ h2 {
   background-color: #3a3e3b; }
 
 /* styles for the google form */
+.required-message, .error-message {
+  color: #c43b1d;
+  display: none;
+  font-size: 13px; }
+
 .form-intro {
   color: #fff; }
 
@@ -253,15 +260,17 @@ h2 {
   height: 42px;
   border-radius: 3px;
   border: none; }
-.review-form .ss-form-question {
+  .review-form input[class="ss-q-short"] {
+    width: 100%; }
+.review-form ol .ss-form-question {
   width: 340px;
   float: left; }
-  .review-form .ss-form-question:nth-child(odd) {
+  .review-form ol .ss-form-question:nth-child(odd) {
     margin-right: 40px; }
-  .review-form .ss-form-question:last-child:after {
-    clear: left;
+  .review-form ol .ss-form-question:last-child {
     content: "";
-    display: table; }
+    clear: both;
+    border: solid 1px blue; }
 
 /* ==========================================================================
    Helper classes
