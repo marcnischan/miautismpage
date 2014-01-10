@@ -122,6 +122,13 @@ input, select, textarea {
   outline: none;
   font-family: inherit; }
 
+.trans {
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out; }
+
 .two-col {
   -webkit-column-count: 2;
   -webkit-column-gap: 40px;
@@ -156,6 +163,19 @@ h2 {
   font-size: 12px;
   line-height: 16px; }
 
+.main-footer .logo-main {
+  color: #bec0b8;
+  width: 500px;
+  float: left; }
+  .main-footer .logo-main .logo {
+    color: #f16a4d;
+    font-size: 27px;
+    line-height: 27px;
+    letter-spacing: -0.045em;
+    padding-top: 28px; }
+  .main-footer .logo-main .tagline {
+    font: normal 11px/16px "Junction", sans-serif; }
+
 .logo-main {
   color: #bec0b8;
   width: 600px;
@@ -183,10 +203,45 @@ h2 {
 .email-signup {
   background-color: #fff;
   height: 45px;
-  font: normal 12px/45px "Junction";
-  color: #7a817d; }
-  .email-signup form {
+  font: normal 11px/45px "Junction";
+  color: #7a817d;
+  letter-spacing: -0.035em; }
+  .email-signup #mc_embed_signup {
+    width: 360px;
     float: right; }
+    .email-signup #mc_embed_signup form {
+      padding: 0; }
+    .email-signup #mc_embed_signup .mc-field-group {
+      line-height: 36px;
+      padding-top: 5px;
+      padding-bottom: 0 !important;
+      min-height: 100%;
+      margin: 0;
+      width: 360px; }
+    .email-signup #mc_embed_signup #mc-embedded-subscribe {
+      width: 90px;
+      background-color: #454a46;
+      color: #ffdd22;
+      display: inline;
+      font: normal 12px/20px "Junction";
+      margin: 5px 0 0 0;
+      padding-top: 4px;
+      height: 34px; }
+    .email-signup #mc_embed_signup #mce-EMAIL {
+      width: 250px;
+      display: inline;
+      margin-right: 8px;
+      font: normal 12px/16px "Junction"; }
+    .email-signup #mc_embed_signup #mc_embed_signup form {
+      text-align: right; }
+  .email-signup .email-cta {
+    width: 360px;
+    display: block;
+    float: left; }
+  .email-signup input[type="email"] {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: solid 1px #999; }
 
 .main-intro-area {
   height: 577px; }
@@ -201,6 +256,19 @@ h2 {
     letter-spacing: -0.065em;
     text-align: center;
     margin-top: 124px; }
+
+.blurb .blurb-text {
+  width: 440px;
+  float: right; }
+.blurb #mc_embed_signup form {
+  text-align: left;
+  padding: 0;
+  margin: 0; }
+.blurb #mc_embed_signup #mc-embedded-subscribe {
+  background-color: #454a46;
+  color: #ffdd22;
+  font: normal 14px/36px "Junction";
+  margin: 0; }
 
 .coming-soon {
   font: normal 17px/21px "Chunk Five";
@@ -224,6 +292,8 @@ h2 {
   font-size: 14px;
   line-height: 21px;
   color: #323733; }
+  .call-to-action h2 {
+    text-align: center; }
   .call-to-action:before {
     position: absolute;
     bottom: -40px;
@@ -415,6 +485,36 @@ h2 {
   display: block;
   float: left;
   margin-right: 40px; }
+
+.social-footer {
+  display: block;
+  width: 190px;
+  float: right;
+  margin-top: 46px; }
+  .social-footer .social-cta {
+    width: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    color: #fff;
+    font: lighter 11px/18px "Junction" sans-serif; }
+    .social-footer .social-cta:hover {
+      color: #fff; }
+
+.main-footer {
+  padding: 0 0 60px 0;
+  color: #fff; }
+  .main-footer .tagline a:link, .main-footer .tagline a:visited {
+    color: #fff;
+    text-decoration: none; }
+    .main-footer .tagline a:link:hover, .main-footer .tagline a:link:visited, .main-footer .tagline a:visited:hover, .main-footer .tagline a:visited:visited {
+      text-decoration: underline; }
+
+.icon-fb {
+  padding: 2px 0 0 0;
+  opacity: .6; }
+  .icon-fb:hover {
+    opacity: 1; }
 
 /* ==========================================================================
    Helper classes
