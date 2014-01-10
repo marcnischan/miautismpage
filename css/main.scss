@@ -322,6 +322,18 @@ h2 {
 	}
 }
 .blurb {
+	padding: 100px 0;
+	
+	h3 {
+		font-size: 34px;
+		line-height: 42px;
+		color: #f16a4d;
+		margin-top: 0;
+		letter-spacing: -0.065em;
+	}
+	p {
+		font: lighter 14px/21px "Junction" sans-serif;
+	}
 	.blurb-text {
 		width: 440px;
 		float: right;
@@ -601,20 +613,7 @@ h2 {
 
 /* ===================== styling for the infomation section =========== */
 
-.blurb {
-	padding: 100px 0 60px;
-	
-	h3 {
-		font-size: 34px;
-		line-height: 42px;
-		color: #f16a4d;
-		margin-top: 0;
-		letter-spacing: -0.065em;
-	}
-	p {
-		font: lighter 14px/21px "Junction" sans-serif;
-	}
-}
+
 .phone-img {
 	display: block;
 	float: left;
@@ -625,16 +624,16 @@ h2 {
 	display: block;
 	width: 190px;
 	float: right;
-	margin-top: 46px;
+	margin-top: 63px;
 	
 	
 	.social-cta {
 		width: 150px;
 		display: block;
-		float: left;
-		margin: 0 10px 0 0;
+		float: right;
+		margin: 3px 0 0 10px;
 		color: #fff;
-		font: lighter 11px/18px "Junction" sans-serif;
+		font: lighter 11px/16px "Junction" sans-serif;
 
 		&:hover	{
 			color: #fff;
