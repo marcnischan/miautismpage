@@ -205,7 +205,8 @@ h2 {
   height: 45px;
   font: normal 11px/45px "Junction";
   color: #7a817d;
-  letter-spacing: -0.035em; }
+  letter-spacing: -0.035em;
+  overflow: hidden; }
   .email-signup #mc_embed_signup {
     width: 360px;
     float: right; }
