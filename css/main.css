@@ -202,14 +202,14 @@ h2 {
 
 .email-signup {
   background-color: #fff;
+  height: 45px;
   font: normal 11px/45px "Junction";
   color: #7a817d;
   letter-spacing: -0.035em;
   overflow: hidden; }
   .email-signup #mc_embed_signup {
     width: 360px;
-    float: left;
-    display: inline-block; }
+    float: right; }
     .email-signup #mc_embed_signup form {
       padding: 0; }
     .email-signup #mc_embed_signup .mc-field-group {
@@ -227,10 +227,7 @@ h2 {
       font: normal 12px/20px "Junction";
       margin: 5px 0 0 0;
       padding-top: 4px;
-      height: 34px;
-      position: relative;
-      top: -45px;
-      left: 270px; }
+      height: 34px; }
     .email-signup #mc_embed_signup #mce-EMAIL {
       width: 250px;
       display: inline;

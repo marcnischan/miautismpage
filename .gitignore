@@ -9,7 +9,9 @@
 js/vendor/html5shiv-printshiv.js
 js/vendor/html5shiv.js
 js/vendorjquery.uniform.min.js
-
+home2.html
+js/plugins-ck.js
+/js/vendor/jquery.uniform.min.js
 
 #GENERIC GITIGNORE
 # Compiled source #
