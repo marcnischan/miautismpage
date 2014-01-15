@@ -302,7 +302,8 @@ h2 {
   padding: 20px 30px 14px;
   font-size: 14px;
   line-height: 21px;
-  color: #323733; }
+  color: #323733;
+  border-bottom: solid 1px #fff; }
   .call-to-action h2 {
     text-align: center; }
   .call-to-action:before {
