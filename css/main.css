@@ -51,21 +51,6 @@ canvas,
 img,
 video {
   vertical-align: middle; }
-  
-img.steps {
-  float:left; 
-  vertical-align: middle; }
-  
-.steptext {
-  vertical-align: middle; 
-  margin-bottom: 60px; 
-  padding-top:30px; }
-  
-.steptextend {
-  vertical-align: middle; 
-  padding-top:30px; }
-  
-
 
 /*
  * Remove default fieldset styles.
@@ -158,12 +143,6 @@ h2 {
   color: #f16a4d;
   text-transform: uppercase;
   letter-spacing: 0.065em; }
-  
-h3 {
-  font: normal 20px/27px "Junction", Helvetica;
-  font-size: 0.8em;
-  color: #fff;
-  line-height: 1.4em; }
 
 .centered {
   margin: auto;
@@ -278,6 +257,11 @@ h3 {
     letter-spacing: -0.065em;
     text-align: center;
     margin-top: 124px; }
+  .main-intro h3 {
+    font: normal 20px/27px "Junction", Helvetica;
+    font-size: 0.8em;
+    color: #fff;
+    line-height: 1.4em; }
 
 .blurb {
   padding: 100px 0; }
@@ -301,12 +285,12 @@ h3 {
     color: #ffdd22;
     font: normal 14px/36px "Junction";
     margin: 0; }
-    
 
 .coming-soon {
   font: normal 17px/21px "Chunk Five";
   height: 81px;
   margin-top: 68px;
+  padding-top: 58px;
   text-align: center;
   background: transparent url(../img/compas.png) 50% top no-repeat; }
 
@@ -315,11 +299,12 @@ h3 {
 
 .call-to-action {
   position: absolute;
+  top: 500px;
   z-index: 2;
   background: #fff;
   width: 720px;
   left: 0;
-  padding: 20px 30px 14px;
+  padding: 20px 60px 24px;
   font-size: 14px;
   line-height: 21px;
   color: #323733;
@@ -337,6 +322,17 @@ h3 {
     border-top: 40px solid #fff;
     content: "";
     left: 0; }
+  .call-to-action img.steps {
+    float: left;
+    vertical-align: middle; }
+  .call-to-action .steptext {
+    vertical-align: middle;
+    margin-bottom: 60px;
+    padding: 30px 0 0 60px;
+    font: normal 16px/21px "Junction", "Helvetica Neue", Helvetica, Arial; }
+  .call-to-action .steptext.end {
+    vertical-align: middle;
+    padding-top: 30px; }
 
 .review-form-area {
   background: #f16a4d url(../img/bg-form.jpg);
@@ -346,7 +342,7 @@ h3 {
 .review-form {
   position: relative;
   overflow: auto;
-  padding-top: 100px; }
+  padding-top: 200px; }
   .review-form h3 {
     font-size: 32px;
     line-height: 32px;
@@ -360,8 +356,8 @@ h3 {
 
 /* ================ styles for the google form =============================== */
 .form-intro {
-  color: #fff; 
-  margin-top: 275px;}
+  color: #fff;
+  margin-top: 275px; }
 
 .required-message, .error-message {
   color: #c43b1d;
