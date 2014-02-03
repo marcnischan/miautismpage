@@ -17,7 +17,7 @@ select,
 textarea {
     color: #222;
 }
-
+ 
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -321,6 +321,12 @@ h2 {
 		text-align: center;
 		margin-top: 124px;
 	}
+	h3 {
+	  font: normal 20px/27px "Junction", Helvetica;
+	  font-size: 0.8em;
+	  color: #fff;
+	  line-height: 1.4em; 
+	}
 }
 .blurb {
 	padding: 100px 0;
@@ -367,12 +373,12 @@ h2 {
 }
 .call-to-action {
 	position: absolute;
-	bottom: -219px;
+	top: 500px;
 	z-index: 2;
 	background: #fff;
 	width: 720px;
 	left: 0;
-	padding: 20px 30px 14px;
+	padding: 20px 60px 24px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #323733;
@@ -394,6 +400,20 @@ h2 {
 		content: "";
 		left: 0;
 	}
+	img.steps {
+		float:left; 
+		vertical-align: middle; 
+	}
+	.steptext {
+		vertical-align: middle; 
+		margin-bottom: 60px; 
+		padding: 30px 0 0 60px;
+		font: normal 16px/21px "Junction", "Helvetica Neue", Helvetica, Arial; 
+	}	
+	.steptext.end {
+		vertical-align: middle; 
+		padding-top: 30px; 
+	}
 }
 .review-form-area {
 	background: $red url(../img/bg-form.jpg);
@@ -402,7 +422,7 @@ h2 {
 .review-form {
 	position: relative;
 	overflow: auto;
-	padding-top: 100px;
+	padding-top: 200px;
 	
 	h3 {
 		font-size: 32px;
@@ -426,6 +446,7 @@ h2 {
 
 .form-intro {
 	color: #fff;
+	margin-top: 275px;
 }
 .required-message, .error-message {
 	color: #c43b1d;
@@ -855,3 +876,4 @@ h2 {
         page-break-after: avoid;
     }
 }
+
