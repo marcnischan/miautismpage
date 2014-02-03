@@ -51,3 +51,5 @@ js/plugins-ck.js
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+/codekit-config.json
