@@ -51,21 +51,6 @@ canvas,
 img,
 video {
   vertical-align: middle; }
-  
-img.steps {
-  float:left; 
-  vertical-align: middle; }
-  
-.steptext {
-  vertical-align: middle; 
-  margin-bottom: 60px; 
-  padding-top:30px; }
-  
-.steptextend {
-  vertical-align: middle; 
-  padding-top:30px; }
-  
-
 
 /*
  * Remove default fieldset styles.
@@ -158,12 +143,6 @@ h2 {
   color: #f16a4d;
   text-transform: uppercase;
   letter-spacing: 0.065em; }
-  
-h3 {
-  font: normal 20px/27px "Junction", Helvetica;
-  font-size: 0.8em;
-  color: #fff;
-  line-height: 1.4em; }
 
 .centered {
   margin: auto;
@@ -301,12 +280,12 @@ h3 {
     color: #ffdd22;
     font: normal 14px/36px "Junction";
     margin: 0; }
-    
 
 .coming-soon {
   font: normal 17px/21px "Chunk Five";
   height: 81px;
   margin-top: 68px;
+  padding-top: 58px;
   text-align: center;
   background: transparent url(../img/compas.png) 50% top no-repeat; }
 
@@ -315,6 +294,7 @@ h3 {
 
 .call-to-action {
   position: absolute;
+  bottom: -219px;
   z-index: 2;
   background: #fff;
   width: 720px;
@@ -360,8 +340,7 @@ h3 {
 
 /* ================ styles for the google form =============================== */
 .form-intro {
-  color: #fff; 
-  margin-top: 275px;}
+  color: #fff; }
 
 .required-message, .error-message {
   color: #c43b1d;
