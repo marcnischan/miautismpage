@@ -446,7 +446,7 @@ h2 {
 
 .form-intro {
 	color: #fff;
-	margin-top: 275px;
+	margin-top: 305px;
 }
 .required-message, .error-message {
 	color: #c43b1d;
@@ -482,6 +482,8 @@ h2 {
 		height: 42px;
 		border-radius: 3px;
 		border: none;
+		padding: 0 14px;
+		line-height: 42px;
 		
 		&[class="ss-q-short"] {
 			width: 100%;
