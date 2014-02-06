@@ -166,7 +166,10 @@ h2 {
 .main-footer .logo-main {
   color: #bec0b8;
   width: 500px;
-  float: left; }
+  float: left;
+  background: transparent url(../img/AAOM-logo.png) no-repeat left 21px;
+  padding: 0 0 0 100px;
+  background-size: 84px; }
   .main-footer .logo-main .logo {
     color: #f16a4d;
     font-size: 27px;
