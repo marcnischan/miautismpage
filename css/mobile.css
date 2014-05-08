@@ -176,6 +176,9 @@ h2 {
 .main-header .tagline {
     display: none;
 }
+.email-area {
+    padding-bottom: 1em;
+}
 .main-footer .logo-main {
   color: #bec0b8;
   width: 100%;
@@ -227,7 +230,6 @@ h2 {
   color: #7a817d;
   letter-spacing: -0.035em;
   overflow: hidden; 
-  margin-bottom: 1em;
 }
   .email-signup #mc_embed_signup {
     width: 100%;
