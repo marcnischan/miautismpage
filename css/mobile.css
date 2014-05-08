@@ -465,9 +465,6 @@ h2 {
   .main-form-part-two .business-category .ss-q-title {
     position: static;
     top: 0; }
-  .main-form-part-two .ss-q-title {
-    position: absolute;
-    top: -3px; }
   .main-form-part-two input {
     color: #222; }
     .main-form-part-two input[class="ss-q-short"] {

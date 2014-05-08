@@ -447,9 +447,6 @@ h2 {
   .main-form-part-two .business-category .ss-q-title {
     position: static;
     top: 0; }
-  .main-form-part-two .ss-q-title {
-    position: absolute;
-    top: -3px; }
   .main-form-part-two input {
     color: #222; }
     .main-form-part-two input[class="ss-q-short"] {
@@ -538,6 +535,17 @@ h2 {
   opacity: .6; }
   .icon-fb:hover {
     opacity: 1; }
+
+.high-rating-criterion, .ratings-bullets, .low-rating-criterion {
+    float: left;
+    text-align: center;
+}
+.high-rating-criterion, .ratings-bullets, .low-rating-criterion {
+    width: 30%;
+}
+.ratings-bullets {
+    width: 40%;
+}
 
 /* ==========================================================================
    Helper classes
