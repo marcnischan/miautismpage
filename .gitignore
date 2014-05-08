@@ -12,6 +12,7 @@
 
 /_admin
 web-server.js
+.gitignore
 
 #GENERIC GITIGNORE
 # Compiled source #
