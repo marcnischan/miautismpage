@@ -1,3 +1,12 @@
+
+@media screen and (max-width: 640px) {
+    
+    .business-category label .ss-q-title {
+        margin-bottom: 0.75em;    
+    }
+}
+
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -449,16 +458,13 @@ h2 {
   .main-form-part-two .business-category .ss-choice-item {
     list-style-type: none;
     padding: 0;
-    display: inline-block; }
+    display: block; }
   .main-form-part-two .business-category .ss-choice-label {
     margin-right: 20px;
     font-size: 14px; }
   .main-form-part-two .business-category .ss-q-title {
     position: static;
     top: 0; }
-  .main-form-part-two .ss-q-title {
-    position: absolute;
-    top: -3px; }
   .main-form-part-two input {
     color: #222; }
     .main-form-part-two input[class="ss-q-short"] {
@@ -551,6 +557,10 @@ h2 {
   opacity: .6; }
   .icon-fb:hover {
     opacity: 1; }
+.rating-increment-container {
+    padding: .5em;
+    display: block;
+}
 
 /* ==========================================================================
    Helper classes
