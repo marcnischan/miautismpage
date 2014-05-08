@@ -557,6 +557,10 @@ h2 {
   opacity: .6; }
   .icon-fb:hover {
     opacity: 1; }
+.rating-increment-container {
+    padding: .5em;
+    display: block;
+}
 
 /* ==========================================================================
    Helper classes

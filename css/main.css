@@ -538,15 +538,23 @@ h2 {
 
 .high-rating-criterion, .ratings-bullets, .low-rating-criterion {
     float: left;
-    text-align: center;
 }
-.high-rating-criterion, .ratings-bullets, .low-rating-criterion {
+.high-rating-criterion, .low-rating-criterion {
     width: 30%;
+}
+.high-rating-criterion {
+    text-align: left;
+}
+.low-rating-criterion {
+    text-align: right;
 }
 .ratings-bullets {
     width: 40%;
+    text-align: center;
 }
-
+.rating-increment-container {
+    padding: .5em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
