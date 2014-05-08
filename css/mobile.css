@@ -169,11 +169,13 @@ h2 {
   overflow: auto; }
 
 .main-header {
-  height: 112px;
+  height: auto;
   width: 90%;
   font-size: 16px;
   line-height: 20px; }
-
+.main-header .tagline {
+    display: none;
+}
 .main-footer .logo-main {
   color: #bec0b8;
   width: 100%;
@@ -194,13 +196,16 @@ h2 {
 .logo-main {
   color: #bec0b8;
   width: 90%;
-  float: left; }
+  margin: auto;
+  text-align: center;
+}
   .logo-main .logo {
     color: #f16a4d;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: -0.045em;
-    padding-top: 16px; }
+    font-size: 18px;
+    padding-top: 5px;
+    line-height: 30px;
+    letter-spacing: -0.035em;
+}
 
 .nav-main {
   float: right;
@@ -221,7 +226,9 @@ h2 {
   font: normal 13px/45px "Junction";
   color: #7a817d;
   letter-spacing: -0.035em;
-  overflow: hidden; }
+  overflow: hidden; 
+  margin-bottom: 1em;
+}
   .email-signup #mc_embed_signup {
     width: 100%;
     float: left; }
