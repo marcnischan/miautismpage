@@ -1,3 +1,12 @@
+
+@media screen and (max-width: 640px) {
+    
+    .business-category label .ss-q-title {
+        margin-bottom: 0.75em;    
+    }
+}
+
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -449,7 +458,7 @@ h2 {
   .main-form-part-two .business-category .ss-choice-item {
     list-style-type: none;
     padding: 0;
-    display: inline-block; }
+    display: block; }
   .main-form-part-two .business-category .ss-choice-label {
     margin-right: 20px;
     font-size: 14px; }
