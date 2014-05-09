@@ -4,9 +4,7 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* ===================================== Base styles ======== */
 html,
 button,
 input,
@@ -66,18 +64,12 @@ fieldset {
 textarea {
   resize: vertical; }
 
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 /* overlay the photoshop comp to quickly check for layout */
 .overlay {
   position: absolute;
@@ -88,7 +80,6 @@ textarea {
   opacity: .5;
   margin: auto; }
 
-/* SASS variables */
 /* Set up custom web fonts */
 @font-face {
   font-family: 'Chunk Five';
@@ -555,9 +546,8 @@ h2 {
 .rating-increment-container {
     padding: .5em;
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/* === Helper classes ==== */
+
 /*
  * Image replacement
  */
@@ -607,23 +597,9 @@ h2 {
   position: static;
   width: auto; }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
 .invisible {
   visibility: hidden; }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -634,26 +610,197 @@ h2 {
 .clearfix:after {
   clear: both; }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .clearfix {
   *zoom: 1; }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+
+@media screen and (max-width: 640px) {
+    
+    html {
+        font-size: 0.9em;
+    }
+    
+    .business-category label .ss-q-title {
+        margin-bottom: 0.75em;    
+    }
+    .ss-form-section .ss-q-title {
+        line-height: 1.5em;
+    }
+    .centered {
+        width: 100%;
+    }
+    .main-header {
+        height: auto;
+        width: 90%;
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    .main-header .tagline {
+        display: none;
+    }
+    .email-area {
+        padding-bottom: 1em;
+    }
+    .email-signup {
+        height: 135px;
+        font: normal 13px/45px "Junction";
+        overflow: hidden; 
+    }
+
+    .logo-main {
+        float: none;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+      .logo-main .logo {
+        font-size: 18px;
+        padding-top: 5px;
+        line-height: 30px;
+        letter-spacing: -0.035em;
+    }
+    .main-footer .logo-main {
+        width: 100%;
+        margin-left: 3%;
+    }
+    .main-footer .logo-main .logo {
+        font-size: 22px;
+    }
+    .email-signup #mc_embed_signup {
+        width: 100%;
+        float: left; 
+    }
+    .email-signup #mc_embed_signup form {
+        padding: 0 0 0 20px; 
+    }
+    .email-signup #mc_embed_signup .mc-field-group {
+        width: 95%; 
+    }
+    .email-signup #mc_embed_signup #mc-embedded-subscribe {
+        width: 95%;
+        display: block;
+        margin: 0 0 0 0;
+    }
+    .email-signup #mc_embed_signup #mce-EMAIL {
+        width: 95%%;
+    }
+    .email-signup .email-cta {
+        width: 90%;
+        line-height: 16px;
+        padding-top: 16px;
+        padding-left: 20px;
+    }
+    .main-intro-area {
+        height: 400px; 
+    }
+    .main-intro {
+        padding: 5px 10px 0px 10px;
+        position: static;
+    }
+    
+    .main-intro h1 {
+        font: normal 28px/32px "Junction";
+        margin-top: 34px; 
+    }
+    .blurb {
+        padding: 10px 0;
+    }
+    .blurb h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .blurb .blurb-text {
+        margin: 0 10%; 
+    }
+    .coming-soon {
+        margin-top: 38px;
+    }
+    .call-to-action {
+        margin: 100px 3% 3%;
+        padding: 20px;
+        position: static; 
+        width: auto;
+    }
+    .call-to-action:before {
+        border:none;
+    }
+    .call-to-action img.steps {
+        clear:both;
+    }
+    .call-to-action .steptext {
+        display: block;
+        margin-bottom: 30px;
+        font: normal 14px/18px "Junction", "Helvetica Neue", Helvetica, Arial; 
+    }
+    .review-form {
+        display: block;
+    }
+    .review-form h3 {
+        font-size: 22px;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    .review-form h3:before, .review-form h3:after {
+        content: ""; 
+    }
+
+    /* ================ styles for the google form =============================== */
+    
+    .form-intro {
+        margin-top: 260px; 
+        padding: 10%;
+    }
+    .ss-q-title {
+        font-size: 14px;
+    }
+    .main-form-part-one {
+        margin-bottom: 60px; 
+        padding: 0% 5%;
+    }
+    .main-form-part-one .ss-form-question {
+        width: 100%;
+    }
+    .main-form-part-one input {
+        height: 48px;
+        border-radius: 5px;
+    }
+    .main-form-part-one select {
+        width: 100%; 
+    }
+    .main-form-part-two {
+        margin-bottom: 100px; 
+        padding: 5%;
+    }
+    .main-form-part-two .business-category .ss-choice-item {
+        display: block; 
+    }
+    .main-form-part-two .ss-leftlabel {
+        width: 100%;
+    }
+    .high-rating-criterion, .ratings-bullets, .low-rating-criterion {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* ===================== styling for the infomation section =========== */
+
+    .phone-img {
+        width: 200px;
+        height: auto;
+        padding: 5%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .social-footer {
+        float: left;
+        margin: 20px 0 0 20px;
+    }
+    .rating-increment-container {
+        display: block;
+    }
+}
+
 @media print {
   * {
     background: transparent !important;
