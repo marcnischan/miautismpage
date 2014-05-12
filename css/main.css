@@ -239,7 +239,7 @@ h2 {
     border: solid 1px #999; }
 
 .main-intro-area {
-  height: 577px; }
+  height: 592px; }
 
 .main-intro {
   color: #fff;
@@ -251,11 +251,13 @@ h2 {
     letter-spacing: -0.065em;
     text-align: center;
     margin-top: 124px; }
+/*
   .main-intro h3 {
     font: normal 20px/27px "Junction", Helvetica;
     font-size: 0.8em;
     color: #fff;
     line-height: 1.4em; }
+*/
 
 .blurb {
   padding: 100px 0; }
@@ -281,31 +283,42 @@ h2 {
     margin: 0; }
 
 .coming-soon {
-  font: normal 17px/21px "Chunk Five";
-  height: 81px;
-  margin-top: 68px;
-  padding-top: 58px;
-  text-align: center;
-  background: transparent url(../img/compas.png) 50% top no-repeat; }
-
+    margin-top: 68px;
+    padding-top: 58px;
+    text-align: center;
+    background: transparent url(../img/compas.png) 50% top no-repeat; 
+}
+.coming-soon h3 {
+    font: normal 27px/27px "Chunk Five";
+    margin-bottom: 0.5em;
+}
+.coming-soon p {
+    font: normal 17px/27px "Junction", Helvetica;
+    color: #fff;
+    line-height: 1.4em;
+    -webkit-font-smoothing: antialiased;
+}
 .mail-signup .cta {
-  color: #666; }
-
+    color: #666; 
+}
+.call-to-action-area {
+    
+}
 .call-to-action {
-  position: absolute;
-  top: 500px;
-  z-index: 2;
-  background: #fff;
-  width: 720px;
-  left: 0;
-  padding: 20px 60px 24px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #323733;
-  border-bottom: solid 1px #fff; }
-  .call-to-action h2 {
-    text-align: center; }
-  .call-to-action:before {
+    position: relative;
+    background: #f16a4d url(../img/bg-form.jpg);
+    width: 100%;
+    left: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #323733; 
+    margin: auto;
+}
+.call-to-action h2 {
+    text-align: center; 
+}
+.steps-container:after {
     position: absolute;
     bottom: -40px;
     z-index: 4;
@@ -315,53 +328,85 @@ h2 {
     border-right: 360px solid transparent;
     border-top: 40px solid #fff;
     content: "";
-    left: 0; }
-  .call-to-action img.steps {
+    left: 0;
+}
+.call-to-action img.steps {
     float: left;
-    vertical-align: middle; }
-  .call-to-action .steptext {
+    vertical-align: middle; 
+}
+.call-to-action .steptext {
     vertical-align: middle;
     margin-bottom: 60px;
     padding: 30px 0 0 60px;
-    font: normal 16px/21px "Junction", "Helvetica Neue", Helvetica, Arial; }
-  .call-to-action .steptext.end {
+    font: normal 16px/21px "Junction", "Helvetica Neue", Helvetica, Arial; 
+}
+.call-to-action .steptext.end {
     vertical-align: middle;
-    padding-top: 30px; }
-
+    padding-top: 30px; 
+}
+.steps-container {
+    background-color: #fff;
+    padding: 0 5% 1em;
+    position: relative;
+    width: 720px;
+    margin: auto;
+}
+.steps-container:before {
+    content: "";
+    background-color: #fff;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: -2em;
+    left: 0;
+    z-index: 2000;
+}
+.steps-container h2 {
+    margin-top: 0;
+    padding-top: 4px;
+}
 .review-form-area {
   background: #f16a4d url(../img/bg-form.jpg);
-  padding: 1px;
-  /*correct for collapsing margins that mess up the red bg*/ }
+  padding: 70px 1px 1px;
+}
 
 .review-form {
-  position: relative;
-  overflow: auto;
-  padding-top: 200px; }
-  .review-form h3 {
+    position: relative;
+    overflow: auto;
+    /* padding-top: 200px; */ 
+}
+.review-form h3 {
     font-size: 32px;
     line-height: 32px;
     color: #fff;
-    text-align: center; }
-    .review-form h3:before, .review-form h3:after {
-      content: "~"; }
+    text-align: center; 
+}
+.review-form h3:before, .review-form h3:after {
+    content: "~"; 
+}
 
 .main-footer-area {
-  background-color: #3a3e3b; }
+    background-color: #3a3e3b; 
+}
 
 /* ================ styles for the google form =============================== */
+
 .form-intro {
-  color: #fff;
-  margin-top: 305px; }
+        color: #fff;
+        /* margin-top: 305px; */ 
+}
 
 .required-message, .error-message {
-  color: #c43b1d;
-  display: none;
-  font-size: 13px; }
+    color: #c43b1d;
+    display: none;
+    font-size: 13px; 
+}
 
 .ss-q-title {
-  font: normal bolder 13px/42px "Junction", "Helvetica Neue", Helvetica, sans-serif;
-  text-transform: uppercase;
-  color: #fff; }
+    font: normal bolder 13px/42px "Junction", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff; 
+}
 
 .main-form-part-one {
   margin-bottom: 60px; }
@@ -691,7 +736,7 @@ h2 {
         padding-left: 20px;
     }
     .main-intro-area {
-        height: 400px; 
+        height: 450px; 
     }
     .main-intro {
         padding: 5px 10px 0px 10px;
@@ -715,12 +760,38 @@ h2 {
     }
     .coming-soon {
         margin-top: 38px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .coming-soon h3 {
+        font-size: 1.25em;
+    }
+    .coming-soon p {
+        font-size: 13px;
+        color: #fff;
+        line-height: 1.4em;
     }
     .call-to-action {
-        margin: 100px 3% 3%;
-        padding: 20px;
-        position: static; 
+        padding: 1% 4% 4%; 
         width: auto;
+    }
+    .steps-container {
+        background-color: #fff;
+        padding: 0 5% 1em;
+        position: relative;
+        width: 100%;
+    }
+    .steps-container:before {
+        content: "";
+        background-color: #fff;
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        top: -2em;
+        left: 0;
+        z-index: 2000;
+    }
+    .steps-container:after {
+        border: none;
     }
     .call-to-action:before {
         border:none;
@@ -732,6 +803,9 @@ h2 {
         display: block;
         margin-bottom: 30px;
         font: normal 14px/18px "Junction", "Helvetica Neue", Helvetica, Arial; 
+    }
+    .review-form-area {
+      padding: 1px;
     }
     .review-form {
         display: block;
@@ -748,8 +822,8 @@ h2 {
     /* ================ styles for the google form =============================== */
     
     .form-intro {
-        margin-top: 260px; 
-        padding: 10%;
+/*         margin-top: 260px;  */
+        padding: 5%;
     }
     .ss-q-title {
         font-size: 14px;
