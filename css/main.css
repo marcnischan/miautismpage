@@ -290,12 +290,22 @@ h2 {
     margin: 0; }
 
 .coming-soon {
-  font: normal 17px/21px "Chunk Five";
-  height: 81px;
-  margin-top: 68px;
-  padding-top: 58px;
-  text-align: center;
-  background: transparent url(../img/compas.png) 50% top no-repeat; }
+    height: 81px;
+    margin-top: 68px;
+    padding-top: 58px;
+    text-align: center;
+    background: transparent url(../img/compas.png) 50% top no-repeat; 
+}
+.coming-soon h3 {
+    font: normal 17px/21px "Chunk Five";
+}
+.coming-soon p {
+    font: normal 20px/27px "Junction", Helvetica;
+    font-size: 0.8em;
+    color: #fff;
+    line-height: 1.4em;
+}
+
 
 .mail-signup .cta {
   color: #666; }
@@ -343,9 +353,10 @@ h2 {
   /*correct for collapsing margins that mess up the red bg*/ }
 
 .review-form {
-  position: relative;
-  overflow: auto;
-  padding-top: 200px; }
+    position: relative;
+    overflow: auto;
+    /* padding-top: 200px; */ 
+}
   .review-form h3 {
     font-size: 32px;
     line-height: 32px;
