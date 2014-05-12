@@ -798,14 +798,21 @@ h2 {
     }
     .call-to-action img.steps {
         clear:both;
+        vertical-align: middle;
     }
     .call-to-action .steptext {
         display: block;
         margin-bottom: 30px;
         font: normal 14px/18px "Junction", "Helvetica Neue", Helvetica, Arial; 
+        padding: 20px 0 0 60px;
+    }
+    .call-to-action .steptext.end {
+        vertical-align: middle;
+        padding-top: 20px;
+        padding-bottom:10px;
     }
     .review-form-area {
-      padding: 1px;
+        padding: 1px;
     }
     .review-form {
         display: block;
