@@ -736,7 +736,7 @@ h2 {
         padding-left: 20px;
     }
     .main-intro-area {
-        height: 420px; 
+        height: 450px; 
     }
     .main-intro {
         padding: 5px 10px 0px 10px;
@@ -760,12 +760,15 @@ h2 {
     }
     .coming-soon {
         margin-top: 38px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .coming-soon h3 {
+        font-size: 1.25em;
     }
     .coming-soon p {
-        font-size: 14px;
+        font-size: 13px;
         color: #fff;
         line-height: 1.4em;
-        -webkit-font-smoothing: antialiased;
     }
     .call-to-action {
         padding: 1% 4% 4%; 
