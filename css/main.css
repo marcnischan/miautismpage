@@ -705,7 +705,7 @@ h2 {
         letter-spacing: -0.035em;
     }
     .main-footer .logo-main {
-        width: 100%;
+        width: auto;
         margin-left: 3%;
     }
     .main-footer .logo-main .logo {
@@ -755,7 +755,8 @@ h2 {
         line-height: 32px;
     }
     .blurb .blurb-text {
-        margin: 0 10%; 
+        margin: 0 10%;
+        width: auto;
     }
     .coming-soon {
         margin-top: 38px;
@@ -862,6 +863,7 @@ h2 {
         padding: 5%;
         margin-left: auto;
         margin-right: auto; 
+        float: none;
     }
     .social-footer {
         float: left;
