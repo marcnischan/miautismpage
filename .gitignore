@@ -4,14 +4,15 @@
 
 #MiAutism files to ignore in git
 
-/admin
-/PSD
-js/vendor/html5shiv-printshiv.js
-js/vendor/html5shiv.js
-js/vendorjquery.uniform.min.js
-home2.html
-js/plugins-ck.js
-/js/vendor/jquery.uniform.min.js
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+
+#MiAutism files to ignore in git
+
+/_admin
+web-server.js
+.gitignore
 
 #GENERIC GITIGNORE
 # Compiled source #
@@ -52,4 +53,3 @@ js/plugins-ck.js
 ehthumbs.db
 Thumbs.db
 
-/codekit-config.json
