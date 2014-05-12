@@ -721,6 +721,15 @@ h2 {
     .email-signup #mc_embed_signup .mc-field-group {
         width: 95%; 
     }
+    #mc_embed_signup input.email{
+        width: 100%;
+    }
+    #mc_embed_signup input.button {
+        float: right;
+    }
+    .email-signup #mc_embed_signup input.button {
+        float: none;
+    }
     .email-signup #mc_embed_signup #mc-embedded-subscribe {
         width: 95%;
         display: block;
@@ -742,13 +751,12 @@ h2 {
         padding: 5px 10px 0px 10px;
         position: static;
     }
-    
     .main-intro h1 {
         font: normal 28px/32px "Junction";
         margin-top: 34px; 
     }
     .blurb {
-        padding: 10px 0;
+        padding: 10px 0 40px;
     }
     .blurb h3 {
         font-size: 24px;
