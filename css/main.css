@@ -707,9 +707,19 @@ h2 {
     .main-footer .logo-main {
         width: auto;
         margin-left: 3%;
+        text-align: left;
+    }
+    .main-footer .tagline strong {
+        display: block;
+        color: #fff;
+        letter-spacing: -0.075em;
+    }
+    .main-footer .tagline p {
+        margin-top: 0;
     }
     .main-footer .logo-main .logo {
-        font-size: 22px;
+        font-size: 16px;
+        padding-top: 24px;
     }
     .email-signup #mc_embed_signup {
         width: 100%;
@@ -865,9 +875,6 @@ h2 {
         width: 100%;
         text-align: left;
     }
-
-    /* ===================== styling for the infomation section =========== */
-
     .phone-img {
         width: 200px;
         height: auto;
@@ -876,12 +883,32 @@ h2 {
         margin-right: auto; 
         float: none;
     }
-    .social-footer {
-        float: left;
-        margin: 20px 0 0 20px;
+    .main-footer {
+        padding-bottom: 0;
+    }
+    .main-footer .logo-main {
+        padding-bottom: 0.5em;
     }
     .rating-increment-container {
         display: block;
+    }
+}
+
+@media screen and (max-width: 485px) {
+      .social-footer {
+        float: none;
+        width: 100%;
+        background-color: #666;
+        padding: 10px;
+        overflow: hidden;  
+        margin-top: 0;    
+    }
+    .social-footer .social-cta {
+        width: 79%;
+        padding-right: 7%;
+    }
+    .social-footer .icon-fb {
+        margin-left: 7.5%;
     }
 }
 
