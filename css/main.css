@@ -251,13 +251,6 @@ h2 {
     letter-spacing: -0.065em;
     text-align: center;
     margin-top: 124px; }
-/*
-  .main-intro h3 {
-    font: normal 20px/27px "Junction", Helvetica;
-    font-size: 0.8em;
-    color: #fff;
-    line-height: 1.4em; }
-*/
 
 .blurb {
   padding: 100px 0; }
@@ -296,7 +289,6 @@ h2 {
     font: normal 17px/27px "Junction", Helvetica;
     color: #fff;
     line-height: 1.4em;
-    -webkit-font-smoothing: antialiased;
 }
 .mail-signup .cta {
     color: #666; 
@@ -755,10 +747,10 @@ h2 {
         padding-left: 20px;
     }
     .main-intro-area {
-        height: 450px; 
+        height: 480px; 
     }
     .main-intro {
-        padding: 5px 10px 0px 10px;
+        padding: 5px 0 0;
         position: static;
     }
     .main-intro h1 {
@@ -778,15 +770,16 @@ h2 {
     }
     .coming-soon {
         margin-top: 38px;
-        -webkit-font-smoothing: antialiased;
     }
     .coming-soon h3 {
         font-size: 1.25em;
     }
     .coming-soon p {
-        font-size: 13px;
-        color: #fff;
-        line-height: 1.4em;
+        margin-top: 38px;
+        -webkit-font-smoothing: subpixel-antialiased;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 16px;
     }
     .call-to-action {
         padding: 1% 4% 4%; 
@@ -852,6 +845,9 @@ h2 {
     }
     .ss-q-title {
         font-size: 14px;
+        line-height: 21px;
+        
+        margin-bottom: 4px;
     }
     .main-form-part-one {
         margin-bottom: 60px; 
