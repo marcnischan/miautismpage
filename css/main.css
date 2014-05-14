@@ -838,6 +838,9 @@ h2 {
     }
     .ss-q-title {
         font-size: 14px;
+        line-height: 21px;
+        
+        margin-bottom: 4px;
     }
     .main-form-part-one {
         margin-bottom: 60px; 
