@@ -419,7 +419,7 @@ h2 {
     border: none;
     padding: 0 14px;
     line-height: 42px; }
-    .main-form-part-one input[class="ss-q-short"] {
+    .main-form-part-one input.ss-q-short {
       width: 100%; }
   .main-form-part-one .ss-choices {
     margin: 0;
