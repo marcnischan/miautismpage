@@ -14,10 +14,11 @@ The layout is responsive, and loosely based the [HTML5 Boilerplate](http://html5
 ## Local development
 
 In this repo is a file called web-server.js. It is a simple web server you can run by opening the terminal, cd-ing to the project directory and typing: 
+    
     node web-server.js. 
 
->This will start a node.js server on port 8002. You can now open a browser and point it to localhost:8002/home.html and see the site on your local machine. You can also open the web-server.js file and change the port to suit your needs.
->
+This will start a node.js server on port 8002. You can now open a browser and point it to localhost:8002/home.html and see the site on your local machine. You can also open the web-server.js file and change the port to suit your needs.
+
 
 ## Heroku staging server
 
